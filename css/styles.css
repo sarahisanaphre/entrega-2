@@ -1,0 +1,494 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+inicio {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 2fr 4fr 2fr 4.5fr 4.5fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Header Header Header"
+        "section-a section-a section-a"
+        "testimonio testimonio testimonio"
+        "tesminio-carrusel tesminio-carrusel tesminio-carrusel"
+        "cotización cotización cotización"
+        "footer footer footer";
+}
+  
+  .Header { 
+    grid-area: Header;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: #eeeeec;
+    border-radius: 25px;
+    padding: 5px;
+    font-weight: medium;
+    
+}
+
+.menu a{
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+}
+
+.menu a:hover{
+    color: #b3b3b3;
+    font-weight: bolder;
+}
+  
+  
+.section-a { 
+    grid-area: section-a;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 40px;
+    
+
+ }
+
+
+.sarahi img {
+    width: 100%; 
+    height: auto;
+    max-width: 500px; 
+    display: block;
+}
+
+.text-container {
+    text-align: left; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 0 30px;
+}
+
+.text-container h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.text-container h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.text-container p{
+    margin: 0 auto;
+    
+}
+
+.boton-container {
+    text-align: left; 
+    margin-top: 1px; 
+}
+.boton{
+background-color: orange;
+border: 0.8px solid black;
+padding: 7px;
+border-radius: 25px;
+cursor: pointer;
+}
+
+.boton:hover{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+}
+
+.cliente-1,
+.cliente-2,
+.cliente-3{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 25px;
+    margin-right: 15px;
+    
+    
+}
+
+  .cotización { 
+    grid-area: cotización;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+ }
+ 
+
+ .text-container h3{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    
+ }
+
+ .cot{
+    text-align: center;
+ }
+
+ .form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+
+ .form-container input,
+ .form-container select{
+    width: 100%;
+    padding: 7px;
+    margin: 5px 0;
+    background-color: #eeeeec;
+    border: 1px solid #eeeeec;
+    border-radius: 25px;
+ }
+
+ .form-container label{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1rem;
+ }
+
+.form-container .opcion label{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.form-container select{
+    margin-top: 5px;
+}
+
+
+.form-container button {
+    background-color: orange;
+    border: 0.5px solid black;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.form-container button:hover {
+    background-color: white;
+}
+  h4{
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .form-container{
+    align-items: center;
+  }
+
+.testimonio{
+    padding: 20px;
+    background-image: url(../imagenes/background.png);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.tesminio-carrusel{
+    padding: 25px;
+    background-image: url(../imagenes/background.png);
+    background-size: cover;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+   
+}
+.footer {
+    padding: 25px;
+    background-image: url(../imagenes/background.png);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .info,
+  .serv,
+  .conta {
+    display: grid;
+  }
+
+  h7{
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .contacto-item{
+    display: grid;
+    align-items: left;
+    margin-right: 10px;
+  }
+.conta img {
+    width: 15px; 
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .title{
+    text-align: center;
+  }
+  
+  .proyectos { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    margin: 35px;
+     }
+
+.proyectos img {
+    width: 100%;
+   max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    border-radius: 25px;
+    position: relative;
+    transition: transform 0.3s;
+    opacity: 1;
+    object-fit: cover;
+    
+}
+
+.proyectos img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+.proyectos img:hover::after {
+    content: "Descripción del proyecto"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+  }
+
+  .proyectos img:hover ::after{
+    opacity: 1;
+  }
+
+  .linea {
+    border-top: 1px solid #000; 
+    width: 100%; 
+    margin-top: 10px; 
+    margin-bottom: 30px;
+  }
+  
+  .coti { 
+    margin-bottom: 50px;
+   
+}
+.datos{
+    text-align: center;
+    margin-top: 25px;
+}
+.button-contacto{
+    text-align: center;
+}
+.filtro-proyecto{
+    padding: 15px;
+    background-size: cover;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content:  space-between;
+
+}
+.button-Branding{
+    background-color: orange;
+border: 0.8px solid black;
+border-radius: 25px;
+width: 200px;
+cursor: pointer;
+text-align: center;
+margin-left: 15px;
+}
+.button-graf,
+.button-web{
+    border: 0.8px solid black;
+border-radius: 25px;
+width: 200px;
+cursor: pointer;
+text-align: center;
+
+}
+.services{
+    display: grid;
+    justify-content: center;
+}
+.services img{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-top: 30px;
+    align-items: center;
+}
+.services img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+.services img:hover::after {
+    content: "Descripción del proyecto"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+  }
+
+  .services img:hover ::after{
+    opacity: 1;
+  }
+
+  .productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin: 35px;
+  }
+.producto{
+    text-align: left;
+    font-size: 0.8rem;
+    
+}
+  .producto img{
+    width: 100%;
+   max-width: 400px;
+    height: 100%;
+    max-height: 600px;
+    border-radius: 25px;
+    position: relative;
+    transition: transform 0.3s;
+    opacity: 1;
+    object-fit: cover;
+  }
+
+  .producto img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    filter: grayscale(15%);
+}
+
+.proyecto img:hover::after {
+    content: "Descripción del proyecto"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+  }
+
+  .producto img:hover ::after{
+    opacity: 1;
+  }
+
+  .producto p{
+    margin: 0;
+  }
+  .button-tote{
+    background-color: orange;
+border: 0.8px solid black;
+border-radius: 25px;
+width: 170px;
+cursor: pointer;
+text-align: center;
+margin-left: 15px;
+}
+.button-playeras,
+.button-sudaderas{
+border: 0.8px solid black;
+border-radius: 25px;
+width: 170px;
+cursor: pointer;
+text-align: center;
+
+}
+
+.blog {  display: grid;
+    grid-template-columns: 1fr;
+  }
+    
+  .articulo { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 40px;
+}
+.articulo img{
+    width: 100%; 
+    height: auto;
+    max-width: 400px; 
+    display: block;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+.contenido{
+    text-align: left; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    
+}
+.articulo h3{
+    font-size: 1.5rem;
+}
+  
+  .articulo-2 { grid-area: articulo-2; }
+  
+  .filter { grid-area: filter; }
+  
+  .articulo-3 { grid-area: articulo-3; }
+  
