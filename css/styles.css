@@ -13,26 +13,18 @@ inicio {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 2fr 4fr 2fr 4.5fr 4.5fr 2fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "Header Header Header"
-        "section-a section-a section-a"
-        "testimonio testimonio testimonio"
-        "tesminio-carrusel tesminio-carrusel tesminio-carrusel"
-        "cotización cotización cotización"
-        "footer footer footer";
+    
 }
   
-  .Header { 
-    grid-area: Header;
+  .header { 
+    grid-area: header;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
 
 .logo {
-    width: 100%;
+  
     max-width: 300px;
 }
 .logo img {
@@ -198,12 +190,6 @@ cursor: pointer;
 .form-container button:hover {
     background-color: white;
 }
-  h4{
-    text-align: center;
-    margin: 0;
-    font-size: 1.5rem;
-  }
-
   .form-container{
     align-items: center;
   }
